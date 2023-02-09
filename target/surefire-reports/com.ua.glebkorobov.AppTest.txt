@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.ua.glebkorobov.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.133 s <<< FAILURE! - in com.ua.glebkorobov.AppTest
+shouldAnswerWithTrue(com.ua.glebkorobov.AppTest)  Time elapsed: 0.019 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.ua.glebkorobov.AppTest.shouldAnswerWithTrue(AppTest.java:18)
+
