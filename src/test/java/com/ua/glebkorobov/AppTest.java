@@ -18,6 +18,5 @@ public class AppTest
         assertTrue( true );
         assertTrue( true );
         assertTrue( true );
-        assertTrue( true );
     }
 }
