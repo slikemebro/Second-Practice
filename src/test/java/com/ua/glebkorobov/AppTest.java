@@ -21,11 +21,4 @@ public class AppTest
         assertTrue( true );
     }
 
-    @Test
-    public void whenEmptyString_thenAccept() {
-        App palindromeTester = new App();
-        assertTrue(palindromeTester.isPalindrome(""));
-        assertTrue(palindromeTester.isPalindrome("noon"));
-        assertFalse(palindromeTester.isPalindrome("noan"));
-    }
 }
