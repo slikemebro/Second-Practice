@@ -16,6 +16,10 @@ public class App {
 
     public static final String FORMAT_OF_FIGURES = "format";
 
+    public static final String MIN = "min";
+    public static final String MAX = "max";
+    public static final String INCREMENT = "increment";
+
 
     public static void main( String[] args ) {
         checkFormat();
@@ -40,16 +44,16 @@ public class App {
     private static void makeMultiplicationTableInteger() {
         GetProperty property = new GetProperty(FILE_NAME_PROPERTIES);
 
-        int min = Integer.valueOf(property.getValueFromProperty("min"));
-        int max = Integer.valueOf(property.getValueFromProperty("max"));
-        int increment = Integer.valueOf(property.getValueFromProperty("increment"));
+        int min = Integer.parseInt(property.getValueFromProperty(MIN));
+        int max = Integer.parseInt(property.getValueFromProperty(MAX));
+        int increment = Integer.parseInt(property.getValueFromProperty(INCREMENT));
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         for (int i = min; i <= max; i += increment) {
-            result = "";
+            result.delete(0, result.length());
             for (int j = min; j <= max; j += increment) {
-                result += (j + " * " + i + " = " + (i * j) + " | ");
+                result.append(j).append(" * ").append(i).append(" = ").append(i * j).append(" | ");
             }
             logger.info(result);
         }
@@ -58,16 +62,16 @@ public class App {
     private static void makeMultiplicationTableByte(){
         GetProperty property = new GetProperty(FILE_NAME_PROPERTIES);
 
-        byte min = Byte.valueOf(property.getValueFromProperty("min"));
-        byte max = Byte.valueOf(property.getValueFromProperty("max"));
-        byte increment = Byte.valueOf(property.getValueFromProperty("increment"));
+        byte min = Byte.parseByte(property.getValueFromProperty(MIN));
+        byte max = Byte.parseByte(property.getValueFromProperty(MAX));
+        byte increment = Byte.parseByte(property.getValueFromProperty(INCREMENT));
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         for (byte i = min; i <= max; i += increment) {
-            result = "";
+            result.delete(0, result.length());
             for (byte j = min; j <= max; j += increment) {
-                result += (j + " * " + i + " = " + (i * j) + " | ");
+                result.append(j).append(" * ").append(i).append(" = ").append(i * j).append(" | ");
             }
             logger.info(result);
         }
@@ -75,16 +79,16 @@ public class App {
     private static void makeMultiplicationTableLong(){
         GetProperty property = new GetProperty(FILE_NAME_PROPERTIES);
 
-        long min = Long.valueOf(property.getValueFromProperty("min"));
-        long max = Long.valueOf(property.getValueFromProperty("max"));
-        long increment = Long.valueOf(property.getValueFromProperty("increment"));
+        long min = Long.parseLong(property.getValueFromProperty(MIN));
+        long max = Long.parseLong(property.getValueFromProperty(MAX));
+        long increment = Long.parseLong(property.getValueFromProperty(INCREMENT));
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         for (long i = min; i <= max; i += increment) {
-            result = "";
+            result.delete(0, result.length());
             for (long j = min; j <= max; j += increment) {
-                result += (j + " * " + i + " = " + (i * j) + " | ");
+                result.append(j).append(" * ").append(i).append(" = ").append(i * j).append(" | ");
             }
             logger.info(result);
         }
@@ -92,16 +96,16 @@ public class App {
     private static void makeMultiplicationTableDouble(){
         GetProperty property = new GetProperty(FILE_NAME_PROPERTIES);
 
-        double min = Double.valueOf(property.getValueFromProperty("min"));
-        double max = Double.valueOf(property.getValueFromProperty("max"));
-        double increment = Double.valueOf(property.getValueFromProperty("increment"));
+        double min = Double.parseDouble(property.getValueFromProperty(MIN));
+        double max = Double.parseDouble(property.getValueFromProperty(MAX));
+        double increment = Double.parseDouble(property.getValueFromProperty(INCREMENT));
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         for (double i = min; i <= max; i += increment) {
-            result = "";
+            result.delete(0, result.length());
             for (double j = min; j <= max; j += increment) {
-                result += (j + " * " + i + " = " + (i * j) + " | ");
+                result.append(j).append(" * ").append(i).append(" = ").append(i * j).append(" | ");
             }
             logger.info(result);
         }
@@ -109,16 +113,16 @@ public class App {
     private static void makeMultiplicationTableFloat(){
         GetProperty property = new GetProperty(FILE_NAME_PROPERTIES);
 
-        float min = Float.valueOf(property.getValueFromProperty("min"));
-        float max = Float.valueOf(property.getValueFromProperty("max"));
-        float increment = Float.valueOf(property.getValueFromProperty("increment"));
+        float min = Float.parseFloat(property.getValueFromProperty(MIN));
+        float max = Float.parseFloat(property.getValueFromProperty(MAX));
+        float increment = Float.parseFloat(property.getValueFromProperty(INCREMENT));
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         for (float i = min; i <= max; i += increment) {
-            result = "";
+            result.delete(0, result.length());
             for (float j = min; j <= max; j += increment) {
-                result += (j + " * " + i + " = " + (float) (i * j) + " | ");
+                result.append(j).append(" * ").append(i).append(" = ").append(i * j).append(" | ");
             }
             logger.info(result);
         }
