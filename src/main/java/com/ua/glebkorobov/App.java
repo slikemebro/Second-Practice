@@ -10,7 +10,7 @@ import org.apache.logging.log4j.LogManager;
  */
 public class App {
 
-    private static final String FILE_NAME_PROPERTIES = "myP.properties";
+    private static final String FILE_NAME_PROPERTIES = "myProp.properties";
 
     private static final Logger logger = LogManager.getLogger(App.class);
 
@@ -26,7 +26,6 @@ public class App {
     }
 
     private static void checkFormat() {
-
         if (System.getProperty(FORMAT_OF_FIGURES) == null ||
                 System.getProperty(FORMAT_OF_FIGURES).equalsIgnoreCase("int")) {
             makeMultiplicationTableInteger();
