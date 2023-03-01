@@ -1,5 +1,6 @@
 package com.ua.glebkorobov;
 
+import com.ua.glebkorobov.exception.WrongFormat;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -21,11 +22,11 @@ public class App {
     public static final String INCREMENT = "increment";
 
 
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws WrongFormat {
         checkFormat();
     }
 
-    private static void checkFormat() {
+    private static void checkFormat() throws WrongFormat {
         if (System.getProperty(FORMAT_OF_FIGURES) == null ||
                 System.getProperty(FORMAT_OF_FIGURES).equalsIgnoreCase("int")) {
             logger.info("Format is int");
@@ -44,7 +45,7 @@ public class App {
             makeMultiplicationTableFloat();
         }else{
             logger.warn("wrong format");
-            throw new RuntimeException("wrong format");
+            throw new WrongFormat("wrong format");
         }
     }
 
