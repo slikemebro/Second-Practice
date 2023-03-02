@@ -9,6 +9,7 @@ import org.apache.logging.log4j.LogManager;
 /**
  * Hello world!
  * hi
+ * hi
  */
 public class App {
 
