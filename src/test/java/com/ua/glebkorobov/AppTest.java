@@ -23,16 +23,6 @@ public class AppTest {
     }
 
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue( true );
-        assertTrue( true );
-        assertTrue( true );
-        assertTrue( true );
-        assertTrue( true );
-        assertTrue( true );
-    }
-
-    @Test
     public void integerFormatCheck() throws WrongFormat {
         assertEquals("integer", App.checkFormat("INT"));
         assertEquals("integer", App.checkFormat("int"));
