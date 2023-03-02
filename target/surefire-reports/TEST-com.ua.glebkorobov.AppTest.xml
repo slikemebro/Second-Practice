@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ua.glebkorobov.AppTest" time="0.219" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.ua.glebkorobov.AppTest" time="3.714" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="C:\Users\Aleks\AppData\Local\Temp\surefire12399730503879387624\surefirebooter249171665180387095.jar C:\Users\Aleks\AppData\Local\Temp\surefire12399730503879387624 2023-03-01T10-17-31_597-jvmRun1 surefire3910882985105230203tmp surefire_018069485478845344476tmp"/>
+    <property name="sun.java.command" value="C:\Users\Aleks\AppData\Local\Temp\surefire9466235945266444104\surefirebooter1793400640615988387.jar C:\Users\Aleks\AppData\Local\Temp\surefire9466235945266444104 2023-03-02T12-29-18_717-jvmRun1 surefire7749706096484384394tmp surefire_012369435879251250136tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\javaProjects\SecondPractice\target\test-classes;C:\javaProjects\SecondPractice\target\classes;C:\Users\Aleks\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Aleks\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Aleks\.m2\repository\org\apache\logging\log4j\log4j-api\2.19.0\log4j-api-2.19.0.jar;C:\Users\Aleks\.m2\repository\org\apache\logging\log4j\log4j-core\2.19.0\log4j-core-2.19.0.jar;C:\Users\Aleks\.m2\repository\org\mockito\mockito-core\5.1.1\mockito-core-5.1.1.jar;C:\Users\Aleks\.m2\repository\net\bytebuddy\byte-buddy\1.12.22\byte-buddy-1.12.22.jar;C:\Users\Aleks\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.22\byte-buddy-agent-1.12.22.jar;C:\Users\Aleks\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Aleks\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Aleks\AppData\Local\Temp\surefire12399730503879387624\surefirebooter249171665180387095.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Aleks\AppData\Local\Temp\surefire9466235945266444104\surefirebooter1793400640615988387.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.1+10-21"/>
@@ -58,5 +58,17 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.ua.glebkorobov.AppTest" time="0"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.ua.glebkorobov.AppTest" time="2.997"/>
+  <testcase name="floatMultiplicationTable" classname="com.ua.glebkorobov.AppTest" time="0.293"/>
+  <testcase name="byteFormatCheck" classname="com.ua.glebkorobov.AppTest" time="0.081"/>
+  <testcase name="doubleMultiplicationTable" classname="com.ua.glebkorobov.AppTest" time="0.002"/>
+  <testcase name="integerFormatCheck" classname="com.ua.glebkorobov.AppTest" time="0.04"/>
+  <testcase name="byteMultiplicationTable" classname="com.ua.glebkorobov.AppTest" time="0.002"/>
+  <testcase name="checkForExceptionWrongFormatForFigures" classname="com.ua.glebkorobov.AppTest" time="0.002"/>
+  <testcase name="longFormatCheck" classname="com.ua.glebkorobov.AppTest" time="0.017"/>
+  <testcase name="doubleFormatCheck" classname="com.ua.glebkorobov.AppTest" time="0.016"/>
+  <testcase name="longMultiplicationTable" classname="com.ua.glebkorobov.AppTest" time="0.002"/>
+  <testcase name="integerMultiplicationTable" classname="com.ua.glebkorobov.AppTest" time="0.002"/>
+  <testcase name="floatFormatCheck" classname="com.ua.glebkorobov.AppTest" time="0.015"/>
+  <testcase name="checkForExceptionWrongFormat" classname="com.ua.glebkorobov.AppTest" time="0.001"/>
 </testsuite>
