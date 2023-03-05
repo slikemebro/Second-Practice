@@ -1,27 +1,21 @@
 package com.ua.glebkorobov;
 
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class GetPropertyTest {
+class GetPropertyTest {
 
     private GetProperty getProperty;
 
-    @Rule
-    public final ExpectedException exception = ExpectedException.none();
-
-
-    @Before
-    public void before() {
+    @BeforeEach
+    void before() {
         getProperty = new GetProperty("test.properties");
     }
 
     @Test
-    public void getValueFromProperty() {
+    void getValueFromProperty() {
         assertEquals("1", getProperty.getValueFromProperty("min"));
         assertEquals("1", getProperty.getValueFromProperty("mIn"));
         assertEquals("6", getProperty.getValueFromProperty("max"));
@@ -31,23 +25,23 @@ public class GetPropertyTest {
     }
 
     @Test
-    public void getValueFromPropertyWithWrongKey() {
+    void getValueFromPropertyWithWrongKey() {
         assertNull(getProperty.getValueFromProperty("test"));
     }
 
     @Test
-    public void getFileNameProperty() {
+    void getFileNameProperty() {
         assertEquals("test.properties", getProperty.getFileNameProperty());
     }
 
     @Test
-    public void createGetPropertyWithWrongNameOfFile() {
-        exception.expect(RuntimeException.class);
-        getProperty = new GetProperty("wrongName.properties");
+    void createGetPropertyWithWrongNameOfFile() {
+        assertThrows(RuntimeException.class,
+                () -> getProperty = new GetProperty("wrongName.properties"));
     }
 
     @Test
-    public void setFileNameProperty() {
+    void setFileNameProperty() {
         getProperty.setFileNameProperty("test1.properties");
         assertEquals("test1.properties", getProperty.getFileNameProperty());
         assertEquals("10", getProperty.getValueFromProperty("min"));
