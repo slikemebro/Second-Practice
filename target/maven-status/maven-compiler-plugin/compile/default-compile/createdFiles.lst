@@ -1,3 +1,4 @@
 com\ua\glebkorobov\App.class
 com\ua\glebkorobov\exception\WrongFormat.class
 com\ua\glebkorobov\GetProperty.class
+com\ua\glebkorobov\MultiplicationTable.class
